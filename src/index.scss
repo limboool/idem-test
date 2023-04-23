@@ -1,0 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/baron-neue');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.App {
+    margin-top: 80px;
+    max-width: 2100px;
+    min-width: 1000px;
+    margin-left: 120px;
+    margin-top: 80px;
+
+}
+
+
+@media screen and (max-width:768px) {
+    .App {
+        margin-top: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+        min-width: 500px;
+
+    }
+}
+
+@media screen and (max-width:375px) {
+    .App {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 150px;
+
+    }
+}

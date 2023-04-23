@@ -1,0 +1,126 @@
+.company {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Baron Neue';
+  color: #08131F;
+
+  h {
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+  }
+}
+
+.cart {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin-bottom: 30px;
+}
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.saffari {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 120px;
+  margin-bottom: 90px;
+  margin-top: 160px;
+  white-space: nowrap;
+}
+
+.about_company {
+  flex-shrink: 0;
+  width: 274px;
+  height: 212px;
+  margin-right: 100px;
+
+
+  h {
+    font-family: 'Baron Neue';
+    font-size: 22px;
+    line-height: 30px;
+    color: #08131F;
+  }
+
+  img {
+    width: 106px;
+    height: 65px;
+  }
+
+  p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+}
+
+
+.nav-buttons {
+  margin-left: 60px;
+
+  button {
+    border: 0;
+    background-color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  button:hover {
+    transform: translateX(5px);
+  }
+
+  button:active {
+    transform: translateX(-5px);
+  }
+}
+
+.link {
+  a {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7A1B1B;
+    text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .saffari {
+    width: 728px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .nav-buttons {
+    display: none;
+  }
+
+  .saffari {
+    width: 347px;
+    white-space: normal;
+  }
+
+  .about_company {
+    margin-right: 30px;
+  }
+}

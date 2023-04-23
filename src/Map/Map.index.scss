@@ -1,0 +1,107 @@
+.map {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    min-width: 823px;
+}
+
+.card {
+    display: flex;
+    margin-right: 120px;
+    min-width: 832px;
+
+}
+
+
+.onTheMap {
+    margin-top: -40px;
+    font-size: 36px;
+    color: #333333;
+    margin-right: 120px;
+    white-space: nowrap;
+
+    p {
+        font-family: 'Baron Neue';
+        line-height: 44px;
+    }
+
+    span {
+        display: inline-flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+
+    button {
+        border: 1px solid #c7979144;
+        text-align: left;
+        border-radius: 20px;
+        height: 30px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        padding: 8px 20px;
+        transition-duration: 0.3s;
+        transition-property: transform, background-color;
+        width: auto;
+
+        &:hover {
+            background-color: #c7979144;
+            transform: scale(1.05);
+        }
+
+        &:active {
+            background-color: #c7979199;
+            transform: scale(0.95);
+        }
+    }
+}
+
+.button_content {
+    display: flex;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+        min-width: 728px;
+    }
+
+    .map {
+        width: 688px;
+        min-width: 688px;
+        margin-right: 40px;
+    }
+
+    .span_content {
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+
+}
+
+
+@media screen and (max-width:375px) {
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+        min-width: 375px;
+    }
+
+    .map {
+        width: 347px;
+        min-width: 347px;
+        margin-right: 40px;
+    }
+
+    .span_content {
+        flex-wrap: wrap;
+        display: flex;
+        width: 375px;
+    }
+
+}
